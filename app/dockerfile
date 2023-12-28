@@ -1,0 +1,4 @@
+# Example Dockerfile for building a Docker image for our microservice
+FROM openjdk:11-jre-slim
+COPY target/my-microservice.jar app.jar
+ENTRYPOINT ["java","-jar","/app.jar"]

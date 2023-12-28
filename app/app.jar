@@ -1,0 +1,10 @@
+// Example code for our microservice
+@RestController
+public class HelloController {
+
+    @GetMapping("/")
+    public String index() {
+        return "Hello, World!";
+    }
+
+}
